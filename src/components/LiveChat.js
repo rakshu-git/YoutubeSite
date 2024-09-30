@@ -24,7 +24,7 @@ const [liveMessage,setLiveMessage]=useState("")
       <>
         <div className='w-full h-[600px] ml-2 p-2 border border-black bg-slate-100 rounded-lg overflow-y-scroll flex flex-col-reverse'>  
         <div>
-        {chatMessage.map((c,i)=><ChatMessage key={i} name={c?.name} message={c?.message}/>)}
+        {chatMessage.map((c,i)=><ChatMessage key={i} name={c?.name} message={c?.message}/>  )}
         </div>
         </div>
         <form className='w-full p-2 ml-2 border border-black' onSubmit={(e)=>{
