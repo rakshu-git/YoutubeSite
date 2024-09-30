@@ -16,6 +16,7 @@ const [liveMessage,setLiveMessage]=useState("")
             name : generateRandomName(),
             message : makeRandomMessage(20) + '🚀'
           }))
+          
         }, 2000)
         return () => clearInterval(i)
     }, [])
